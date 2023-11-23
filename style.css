@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inika&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color:  #E5D4FF;
+}
+nav{
+    background-color:  #D0A2F7;
+    border-bottom:1px solid #a46cd6 ;
+    color: black;
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 5%;
+}
+.bx{
+    padding: 10px;
+}
+.settings .bx{
+    font-size: 40px;
+    padding-inline: 2vw;
+}
+
+.light-theme{
+    padding: 20px;
+    font-size: 25px;
+    display: flex;
+}
+.light-theme img{
+    height: 40px;
+}
+#moon{
+    padding: 5px;
+    margin-left: 20px;
+}
+.logo{
+    width: 430px;
+    height: 430px;
+    margin: auto;
+    margin-top: 3vh;
+    border-radius: 50%;
+    border: 1px solid rgb(230, 169, 238);
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 50%;
+}
+header h1{
+    padding-top: 2vh;
+    text-align: center;
+    color: black;
+    font-family: 'Inika', serif;
+}
+header .username{
+    display: flex;
+    justify-content: center ;
+}
+#edit-username{
+    background-color:  #D0A2F7;
+    border:1px solid #a46cd6 ;
+    color: black;
+    padding: 5px;
+    margin-bottom: 6vh;
+    padding-inline: 80px;
+    font-size: 20px;
+    margin-top: 20px;
+    color: rgb(68, 66, 66);
+    
+}
+.play-btn{
+    display: flex;
+    justify-content: center;
+}
+.bx-play-circle{
+    font-size: 100px;
+    color: black;
+}
+#play-border{
+    background-color:  #D0A2F7;
+    border:1px solid #a46cd6 ;
+    height: 140px;
+    width: 380px;
+    margin: auto;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+#play-border img{
+    height: 100px;
+}
+#play-border h1{
+    font-size: 65px;
+    font-weight:lighter;
+    padding-bottom: 20px;
+    font-family: 'Inika', serif;
+    
+}
+
+
+ /* styling username input box */
+
+
+.user-box-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.788);
+    position: absolute;
+    display: none;
+}
+.user-box{
+    width: 50vmax;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color:  #D0A2F7;
+    /* background-color:  rgba(255, 152, 255,0.753); */
+    box-shadow: 0px 0px 10px 10px rgba(255, 101, 255, 0.753);
+    padding-bottom: 30px;
+    position: relative;
+    border-radius: 10px;
+}
+.user-box label{
+    text-align: center;
+    padding: 15px;
+    font-size: 40px;
+}
+.user-box input{
+    width: 80%;
+    height: 70px;
+    margin-inline: 10%;
+    border: 2px solid rgb(175, 175, 175);
+    background-color: white;
+    font-size: 25px;
+    padding-left: 5%;
+    border-radius: 10px;
+    
+}
+#save{
+    width: 80%;
+    height: 70px;
+    margin-inline: 10%;
+    font-size: 25px;
+    font-family: 'Inika', serif;
+    border: 2px solid rgb(165, 165, 165);
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(53, 51, 51);
+    font-size: 45px;
+    border-radius: 10px;
+}
+#cross-box{
+    height: 60px;
+    width: 80px;
+    /* border: 1px solid #9453cc; */
+    border-radius: 15%;
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    /* background-color: #a46cd6; */
+    background-color:  #E5D4FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+}
+
+/* styling game page */
+
+.container{
+    background-color:  #E5D4FF;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container i{
+    position: absolute;
+    font-size: 60px;
+    top: 1%;
+}
+.container .bxs-volume-full{
+    left: 2%;
+}
+.container .bx-exit{
+    right: 2%;
+}
+.semi-container{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+.boxs{
+    border-radius: 20px;
+    background-color:  #D0A2F7;
+    border:1px solid #9d59d8 ;
+    color: black;
+}
+.box1{
+    height: 600px;
+    width: 500px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.box2{
+    width: 900px;
+    height: 700px;
+
+}
+.semi-container h1{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 40px;
+    font-family: 'Inika', serif;
+}
+.box1 img{
+    width: 20vw;
+}
+.box2 p{
+    padding: 2%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.chance-left{
+    /* border: 2px solid red; */
+    text-align: center;
+}
+.input-word{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 20px;
+    list-style: none;
+    /* border: 2px solid black; */
+    margin-block: 10%;
+
+}
+.input-word .letter{
+    border-bottom: 2px solid black;
+    width: 35px;
+    font-size: 25px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center; 
+}
+
+.keyboard {
+    display: flex;  
+    /* border: 2px solid red; */
+    width: 80%;
+    margin-inline: 10%;
+    gap: 5px;   
+    flex-wrap: wrap;   
+    justify-content: center;
+    margin-top: 10%;
+    height: 28%;
+    }
+    
+.keyboard button {
+color: #fff;   
+font-size: 1rem;   
+font-weight: 600; 
+cursor: pointer;   
+outline: none;  
+background:#754477; 
+border-radius: 4px;
+text-transform: uppercase;
+width: calc(100% / 9 - 5px);
+padding: 5px;
+padding-block: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* result page styling */
+
+.result-pg{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.788);
+    position: absolute;
+    display: none  ;
+}
+.result{
+    width: 30vmax;
+    height: 530px;
+    background-color:  #D0A2F7;
+    box-shadow: 0px 0px 10px 10px rgba(238, 21, 21, 0.753);
+    padding-bottom: 30px;
+    position: relative;
+    border-radius: 10px;
+}
+.result img{
+    height: 60%;
+    width: 50%;
+    margin-left: 25%;
+}
+.result h1{
+    text-align: center;
+    font-family: 'Inika', serif;
+    padding-top: 5px;
+    margin-left: 25px;
+}
+.result h2{
+    text-align: center;
+    margin-top: 5%;
+}
+h2 span{
+    padding-left: 5%;
+    color: red;
+}
+.result-option{
+    padding-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 5%;
+}
+.result-option img{
+    height: 60px;
+    width: 60px;
+}
+.result-option h3{
+    padding-inline: 20px;
+}
+
+/* right answer result page */
+
+#right-answer{
+    display: none;
+}
+#right-answer span{
+    color: rgb(13, 148, 13);
+}
+#right-answer .result{
+    box-shadow: 0px 0px 10px 10px rgba(98, 245, 130, 0.753);
+}
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* styling instruction page */
+.rule-page{
+    height: 100vh;
+    width: 100vw;
+}
+.heading-nav{
+    width: 100vw;
+    /* border: 2px solid red; */
+    margin: auto;
+    display: flex;
+    justify-content: end;
+    padding-block: 2vw;
+    background-color:  #D0A2F7;
+    position: relative;
+}
+.heading-nav .bx-info-circle {
+    font-size: 90px;
+    background-color:#E5D4FF;
+    border: 1px solid  #D0A2F7;
+    position: absolute;
+    bottom:-6vh;
+    left: 6vw;
+}
+.head{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-inline: 5vw; */
+    font-size: 70px;
+    font-family: 'Inika', serif;
+
+}
+.exit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.exit i{
+    font-size: 70px;
+}
+.list-bx{
+    border:1px solid #a46cd6 ;
+    background-color:  #D0A2F7;
+    border-radius: 30px;
+    padding: 4vw;
+    margin: 20px;
+}
+.info-box{
+    margin-top: 15vh;
+    padding-inline: 5vw;
+}
+.info-box .box{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 31px;
+    width: 90vw;
+    padding: 20px;
+}
+.info-box h1{
+    border:1px solid #a46cd6 ;
+    background-color:  #ae66e0;
+    box-shadow: 0px 0px 10px 10px rgba(184, 47, 226, 0.753);
+    padding: 1vw;
+    border-radius: 20px;
+    width: fit-content;
+}
+
+

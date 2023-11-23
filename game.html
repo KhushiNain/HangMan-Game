@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <!-- result-page  -->
+
+
+    <!-- wrong answer -->
+    <div id="wrong-answer" class="result-pg">
+        <div class="result">
+            <img src="./images/lost.gif" alt="">
+            <h1>YOU LOST !!</h1>
+            <h2>Correct word was : <span id="answer">Curiosity</span></h2>
+            <div class="result-option">
+                <div>
+                    <img class="replay-btn" src="./assets/play-button.png" alt="">
+                    <h3>REPLAY</h3>
+                </div>
+                <div>
+                    <img class="home-btn" src="./assets/exit.png" alt="">
+                    <h3>MAIN PAGE</h3>
+                </div>
+                
+            </div>
+        </div>
+    </div> 
+
+
+
+    <!-- right answer -->
+    <div id="right-answer" class="result-pg">
+        <div class="result">
+            <img src="./images/victory.gif" alt="">
+            <h1>YOU  WON !!!</h1>
+            <h2>You guessed the right word : <span id="answer">Curiosity</span></h2>
+            <div class="result-option">
+                <div>
+                    <img class="replay-btn" src="./assets/play-button.png" alt="">
+                    <h3>REPLAY</h3>
+                </div>
+                <div>
+                    <img class="home-btn" src="./assets/exit.png" alt="">
+                    <h3>MAIN PAGE</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+
+
+
+
+    <!--   main-page   -->
+    <div class="container">
+        <i class='bx bxs-volume-full'></i>
+        <i class='bx bx-exit'></i>
+        <div class="semi-container">
+            <div>
+                <div class=" box1 boxs">
+                    <img src="./images/hangman-0.svg" alt="">
+                </div>
+                <h1>HANGMAN GAME</h1>
+
+            </div>
+            
+            <div class=" box2 boxs">
+                <h1>HINT:-</h1>
+                <p id="hint-input">A strong desire to know or learn something.</p>
+                <ul class="input-word">
+                    <li class="letter"></li>
+                    <li class="letter"></li>
+                    <li class="letter"></li>
+                    <li class="letter"></li>
+                    <li class="letter"></li>
+                    <li class="letter"></li>
+                    <li class="letter"></li>
+                </ul>
+                <h2 class="chance-left">
+                    Incorrect guesses :<span id="guess-left"> 0 </span> / 6
+                </h2>
+                <div class="keyboard">
+                    <button>A</button><button>B</button><button>C</button><button>D</button><button>E</button><button>F</button><button>G</button><button>H</button><button>I</button><button>J</button><button>K</button><button>L</button><button>M</button><button>N</button><button>O</button><button>P</button><button>Q</button><button>R</button><button>S</button><button>T</button><button>U</button><button>V</button><button>W</button><button>X</button></button><button>Y</button><button>Z</button>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div> 
+    <script src="./game.js"></script>
+
+    
+</body>
+</html> 

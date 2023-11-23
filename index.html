@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <!-- username input box -->
+
+    <form id="user-box" class="user-box-container">
+        <div class="user-box">
+            <label   for="username">Write your username :</label>
+            <input placeholder="Write here" name="username" type="text" id="username">
+            <div id="save">SAVE</div>
+            <div id="cross-box">X</div>
+        </div>
+        
+        
+    </form>
+
+    <!--Main home page -->
+
+    <nav>
+        <div class="settings"> 
+            <i id="sound-icon" class='bx bxs-volume-full'></i>
+            <i class='bx bx-share-alt' ></i>
+            <i id="rule-icon" class='bx bxs-comment-error'></i>
+        </div>
+        <div class="light-theme">
+            <img id="sun" src="./assets/sun.png" alt=""> 
+            <img id="moon" src="./assets/half-moon.png" alt=""> 
+        </div>
+    </nav>
+    <header>
+        <div class="logo">
+            <img src="./assets/handman-logo.jpg" alt="">
+        </div>
+        <h1>Hello There, Username !</h1>
+        <div class="username">
+            <span id="edit-username">Edit username</span>
+        </div>
+        <div id="play-border">
+            <img src="./assets/play-button.png" alt="">
+            <h1>PLAY</h1>
+        </div>
+    </header>
+
+    <script src="./main.js"></script>
+    
+</body>
+</html>

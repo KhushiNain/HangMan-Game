@@ -27,18 +27,27 @@ nav{
     font-size: 40px;
     padding-inline: 2vw;
 }
-
+#sound-icon{
+    padding: 10px;
+    height: 60px;
+    padding-inline: 2vw;
+    
+    position: relative;
+    bottom: -14px;
+}
 .light-theme{
     padding: 20px;
     font-size: 25px;
     display: flex;
 }
 .light-theme img{
-    height: 40px;
+    height: 50px;
 }
 #moon{
     padding: 5px;
     margin-left: 20px;
+    border-radius: 50%;
+    background-color: rgba(54, 53, 53, 0.3);
 }
 .logo{
     width: 430px;
@@ -76,6 +85,9 @@ header .username{
     color: rgb(68, 66, 66);
     
 }
+#edit-username:hover{
+    cursor: pointer;
+}
 .play-btn{
     display: flex;
     justify-content: center;
@@ -83,6 +95,9 @@ header .username{
 .bx-play-circle{
     font-size: 100px;
     color: black;
+}
+#play-border:hover{
+    cursor: pointer;
 }
 #play-border{
     background-color:  #D0A2F7;
@@ -184,7 +199,6 @@ header .username{
 /* styling game page */
 
 .container{
-    background-color:  #E5D4FF;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -196,7 +210,10 @@ header .username{
     font-size: 60px;
     top: 1%;
 }
-.container .bxs-volume-full{
+#game-music{
+    height: 54px;
+    position: absolute;
+    top: 1%;
     left: 2%;
 }
 .container .bx-exit{
@@ -292,14 +309,11 @@ padding: 5px;
 padding-block: 10px;
 }
 
+.keyboard button:hover{
+    background:#502352;
+    cursor: pointer;
 
-
-
-
-
-
-
-
+}
 
 
 

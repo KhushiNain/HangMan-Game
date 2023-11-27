@@ -26,12 +26,12 @@
 
     <nav>
         <div class="settings"> 
-            <i id="sound-icon" class='bx bxs-volume-full'></i>
-            <i class='bx bx-share-alt' ></i>
+            <!-- <i id="sound-icon" class='bx bxs-volume-full'></i> -->
+            <img id="sound-icon" src="./assets/volume.png" alt="">
+            <i onclick="share()" class='bx bx-share-alt' ></i>
             <i id="rule-icon" class='bx bxs-comment-error'></i>
         </div>
         <div class="light-theme">
-            <img id="sun" src="./assets/sun.png" alt=""> 
             <img id="moon" src="./assets/half-moon.png" alt=""> 
         </div>
     </nav>
@@ -39,7 +39,7 @@
         <div class="logo">
             <img src="./assets/handman-logo.jpg" alt="">
         </div>
-        <h1>Hello There, Username !</h1>
+        <h1>Hello There, <span id="name-value">Username !</span></h1>
         <div class="username">
             <span id="edit-username">Edit username</span>
         </div>

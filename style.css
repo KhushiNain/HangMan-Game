@@ -237,8 +237,6 @@ header .username{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-
 }
 .box2{
     width: 900px;
@@ -252,7 +250,7 @@ header .username{
     font-family: 'Inika', serif;
 }
 .box1 img{
-    width: 20vw;
+    width: 80%;
 }
 .box2 p{
     padding: 2%;
@@ -320,7 +318,6 @@ padding-block: 10px;
 
 
 /* result page styling */
-
 .result-pg{
     height: 100vh;
     width: 100vw;
@@ -385,31 +382,6 @@ h2 span{
 #right-answer .result{
     box-shadow: 0px 0px 10px 10px rgba(98, 245, 130, 0.753);
 }
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* styling instruction page */
 .rule-page{
@@ -481,4 +453,39 @@ h2 span{
     width: fit-content;
 }
 
+
+@media only screen and (max-width: 600px){
+    .logo{
+        height: 300px;
+        width: 300px;
+    }
+    #play-border{
+        width: 320px;
+    }
+    .result{
+        width: 100vw;
+    }
+    .semi-container{
+        flex-direction: column;
+    }
+    .box1{
+        height: 30vh;
+        width: 260px;
+        margin:auto;
+        margin-top: 50px;
+    }
+    .box2{
+        width: 98vw;
+        height: 54vh;
+        margin:auto;
+    }
+    .edith1 h1{
+        font-size: 28px;
+
+    }
+    .keyboard {
+        width: 100%;
+        margin: 0%;
+    }
+}
 

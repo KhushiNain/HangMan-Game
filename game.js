@@ -85,7 +85,7 @@ const hintWord=[
     Answer:"BARBER"
 },{
     Riddle:" I have branches, but no fruit, trunk or leaves. What am I?",
-    Answer:"Bank"
+    Answer:"BANK"
 },{
     Riddle:"The more of this there is, the less you see. What is it?",
     Answer:"DARKNESS"

@@ -125,12 +125,7 @@ const hintWord=[
 }
 ]
 
-let round=0;
-maxRounds=3;
 // displaying riddles on the game page
-function startNewRound(){}
-startNewRound()
-
 let RandomTRY=Math.floor(Math.random()*20);
 let chosenRiddle=(hintWord[RandomTRY]);
 let Riddle = chosenRiddle.Riddle
@@ -138,10 +133,7 @@ document.getElementById("hint-input").innerHTML=Riddle
 let animalWord=(chosenRiddle.Answer);
 let displayWord= document.querySelector(".input-word");
 console.log(animalWord)
-
 displayWord.innerHTML=animalWord.split("").map(()=>`<li class="letter"></li>`).join("");
-
-
 
 // result page logic
 let replayBtn=document.querySelectorAll(".replay-btn");

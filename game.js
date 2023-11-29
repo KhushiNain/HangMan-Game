@@ -152,8 +152,8 @@ let resultword= document.querySelectorAll(".rightanswer");
 
 let storedUsername = localStorage.getItem('savedUsername');
 let usernameOnScore= document.getElementsByClassName("nameInResult");
-usernameOnScore[0].innerText=storedUsername
-usernameOnScore[1].innerText=storedUsername
+usernameOnScore[0].innerText=storedUsername;
+usernameOnScore[1].innerText=storedUsername;
 resultword[0].innerHTML=animalWord;
 resultword[1].innerHTML=animalWord
 
@@ -162,12 +162,9 @@ letter=document.querySelectorAll(".letter");
 console.log(letter[1])
 
 // adding right guessed letter to display and modifying keyboard appearance with each guess
-
-
-
 const gamebtn = document.querySelectorAll("button");
 let wrongGuess= document.getElementById("guess-left");
-let guess =0
+let guess =0;
 correctGuess=0;
 let indexFound=[];
 for (let i = 0; i < gamebtn.length; i++) {
@@ -179,7 +176,7 @@ for (let i = 0; i < gamebtn.length; i++) {
         for (let j = 0; j < animalWord.length; j++) {
             if (animalWord[j] === e.target.innerHTML.toUpperCase()) {
                 found = true;
-                letter[j].innerHTML=animalWord[j]
+                letter[j].innerHTML=animalWord[j];
                 indexFound.push(j);
                   
             }}
@@ -188,15 +185,15 @@ for (let i = 0; i < gamebtn.length; i++) {
             gamebtn[i].style.backgroundColor="green";
             correctGuess+= indexFound.length;
             if (correctGuess==animalWord.length){
-                resultBox[1].style.display="flex"
+                resultBox[1].style.display="flex";
             }
         } else {
-            guess+= 1
-            hangmanImg.src=imgarray[guess]
+            guess+= 1;
+            hangmanImg.src=imgarray[guess];
             wrongGuess.innerText=guess;
             gamebtn[i].style.backgroundColor="red";
             if(wrongGuess.innerText==6){
-                GameLost()
+                GameLost();       
             } 
         } 
         gamebtn[i].disabled = true;

@@ -89,4 +89,3 @@ function share() {
     const whatsappShareUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(currentUrl)}`;
     window.open(whatsappShareUrl);
   }
-  
